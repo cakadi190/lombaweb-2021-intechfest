@@ -1,0 +1,153 @@
+.btn {
+
+    // Solid Version
+    &-primary,
+    &-success,
+    &-info,
+    &-danger,
+    &-warning,
+    &-secondary,
+    &-tertiary,
+    &-medium,
+    &-warning {
+        color: $white;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $white;
+        }
+    }
+
+    // Outlined Version
+    &-outline-light,
+    &-dim-light,
+    &-dim-medium {
+        color: $dark;
+    }
+
+    &-outline-primary,
+    &-outline-success,
+    &-outline-info,
+    &-outline-danger,
+    &-outline-warning,
+    &-outline-medium,
+    &-outline-secondary,
+
+    &.btn-dim-primary,
+    &.btn-dim-success,
+    &.btn-dim-info,
+    &.btn-dim-danger,
+    &.btn-dim-warning,
+    &.btn-dim-tertiary,
+    &.btn-dim-dark,
+    &.btn-dim-medium,
+    &.btn-dim-secondary {
+
+        &:hover,
+        &:focus,
+        &:hover:active {
+            color: $white;
+        }
+    }
+
+    &.btn-dim-light {
+      color: $dark;
+    }
+
+    // Disabled Version
+    .disabled {
+
+        // Solid Version
+        &.btn-primary,
+        &.btn-success,
+        &.btn-info,
+        &.btn-danger,
+        &.btn-medium,
+        &.btn-warning,
+        &.btn-secondary {
+            color: $white;
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: $white;
+            }
+        }
+
+        // Outlined Version
+        &.btn-outline-light {
+            color: $dark;
+        }
+
+        &.btn-outline-primary,
+        &.btn-outline-success,
+        &.btn-outline-info,
+        &.btn-outline-danger,
+        &.btn-outline-warning,
+        &.btn-outline-tertiary,
+        &.btn-outline-medium,
+        &.btn-outline-secondary,
+
+        &.btn-dim-primary,
+        &.btn-dim-success,
+        &.btn-dim-info,
+        &.btn-dim-danger,
+        &.btn-dim-warning,
+        &.btn-dim-dark,
+        &.btn-dim-tertiary,
+        &.btn-dim-medium,
+        &.btn-dim-secondary {
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: $white;
+            }
+        }
+    }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-dim-#{$color} {
+    background-color: mix($white, $value, 90%);
+    color: $value;
+
+    &:hover {
+      @include gradient-bg(darken($value, 7.5%));
+      border-color: darken($value, 7.5%);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 $btn-focus-width rgba(mix(color-yiq($value), $value, 15%), .5);
+
+      &:focus:not(:hover) {
+        color: $value;
+      }
+    }
+  }
+}
+
+.dropdown {
+    &.no-caret .dropdown-toggle:after {
+        display: none;
+        visibility: hidden;
+        content: '';
+    }
+
+    &-menu {
+        border: transparent;
+        box-shadow: $box-shadow;
+        max-height: 22rem;
+        overflow-y: auto;
+
+        &-alt {
+            padding: .75rem .5rem;
+
+            >.dropdown-item {
+                padding: .35rem .85rem;
+                border-radius: .25rem;
+            }
+        }
+    }
+}

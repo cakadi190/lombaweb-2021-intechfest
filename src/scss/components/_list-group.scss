@@ -1,0 +1,39 @@
+.list-group {
+  &-arrow {
+    .list-group-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: $gray-600;
+      text-decoration: none;
+
+      .content {
+        flex-basis: calc(100% - 2rem);
+      }
+
+      &::after {
+        flex-basis: 2rem;
+        content: '\f054';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 700;
+        height: 2rem;
+        width: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: all .2s;
+      }
+
+      &:hover,
+      &:active,
+      &:focus,
+      &.active {
+        &::after {
+          transition: all .2s;
+          background: $gray-200;
+        }
+      }
+    }
+  }
+}

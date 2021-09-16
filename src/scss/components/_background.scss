@@ -1,0 +1,34 @@
+.bg {
+  @each $color, $value in $theme-colors {
+    &-#{$color} {
+      @if $color == 'light' OR
+      $color == 'lighter'  {
+        color: $dark;
+      } @else {
+        color: $white;
+      }
+    }
+
+    &-hover-#{$color}:hover {
+      background: $value;
+
+      @if $color == 'light' OR
+      $color == 'lighter'  {
+        color: $dark;
+      } @else {
+        color: $white;
+      }
+    }
+
+    &-focus-#{$color}:focus {
+      background: $value;
+
+      @if $color == 'light' OR
+      $color == 'lighter'  {
+        color: $dark;
+      } @else {
+        color: $white;
+      }
+    }
+  }
+}

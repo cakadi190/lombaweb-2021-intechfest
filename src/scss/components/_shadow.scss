@@ -1,0 +1,21 @@
+.shadow {
+  &-hover-sm:hover {
+    box-shadow: $box-shadow-sm !important;
+  }
+  &-hover:hover {
+    box-shadow: $box-shadow !important;
+  }
+  &-hover-lg:hover {
+    box-shadow: $box-shadow-lg !important;
+  }
+
+  &-focus-sm:focus {
+    box-shadow: $box-shadow-sm !important;
+  }
+  &-focus:focus {
+    box-shadow: $box-shadow !important;
+  }
+  &-focus-lg:focus {
+    box-shadow: $box-shadow-lg !important;
+  }
+}

@@ -1,0 +1,55 @@
+.nav-tabs {
+  border-bottom: 1px solid $light;
+
+  .nav-link {
+    background: transparent;
+    position: relative;
+    border-radius: 0;
+    border: 0;
+
+    &.disabled {
+      opacity: .5;
+    }
+
+    &:after, &:before {
+      content: '';
+      position: absolute;
+    }
+
+    &:after {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 3px;
+      background: #6576ff;
+      opacity: 0;
+      width: 0;
+      transition: all .3s;
+    }
+
+    &.active {
+      background: transparent;
+      border: 0;
+
+      &:after {
+        opacity: 1;
+        width: 100%;
+        transition: all .3s;
+      }
+    }
+  }
+
+  &.nav-dark {
+    border-color: rgba($white, .1);
+
+    .nav-link {
+      color: $gray-300;
+    }
+  }
+
+  &.nav-inline {
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+  }
+}

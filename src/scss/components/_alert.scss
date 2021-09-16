@@ -1,0 +1,32 @@
+@import '../mixins/alerts';
+
+.alert {
+  .title,
+  .h1, .h2, .h3, .h4, .h5, .h6,
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-size: $font-size-base;
+    margin-bottom: .45rem;
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .alert-#{$color} {
+    @include alert-regular($value, $color);
+  }
+
+  .alert-fill.alert-#{$color} {
+    @include alert-fill($value, $color);
+  }
+}
+
+.alert-icon {
+  padding-left: 3.25rem;
+
+  .icon-wrapper {
+    font-size: 1.75rem;
+    position: absolute;
+    top: .4rem;
+    left: .75rem;
+  }
+}

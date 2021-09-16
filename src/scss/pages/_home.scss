@@ -1,0 +1,157 @@
+body {
+  overflow-x: hidden;
+}
+
+section {
+  h3.heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    border-bottom: 1px solid #d8d8d8;
+    justify-content: center;
+
+    span {
+      padding: 1rem;
+      border-bottom: 3px solid var(--primary);
+    }
+  }
+
+  &.bg-primary, .bg-success, .bg-danger {
+    h3.heading {
+      border-color: rgba(255,255,255, .35);
+
+      span {
+        border-color: rgb(255, 255, 255);
+      }
+    }
+  }
+}
+
+.owl-carousel {
+  .ow-nav {
+    display: none;
+  }
+  .owl-dots {
+    margin-top: .5rem;
+  }
+}
+
+.new-feature {
+  display: flex;
+  color: dark;
+  border-radius: 50rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  text-decoration: none;
+  background: var(--light);
+  padding: 0.5rem;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  .new {
+    margin: 0;
+    padding: .5rem 1rem;
+    background: var(--success);
+    border-radius: 50rem;
+    color: #fff;
+  }
+
+  .wrapper {
+    color: var(--dark);
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .new-feature {
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .new-feature {
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+#masthead {
+  background-size: cover;
+  position: relative;
+
+  svg {
+    z-index: 3;
+    position: relative;
+  }
+
+  h3 {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 2.75rem;
+  }
+
+  p {
+    font-size: 1.15rem;
+  }
+}
+
+.featured .icon {
+  background: rgba(0, 0, 0, 0.05);
+  position: relative;
+  width: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  border-radius: 5rem;
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#services a.card {
+  color: var(--dark);
+  text-decoration: none;
+  transition: all 0.2s;
+
+  p {
+    color: #686868;
+  }
+
+  &:hover {
+    box-shadow: none;
+    border-color: #f4bd42 !important;
+    background: #fdf8f0;
+  }
+
+  &:focus {
+    background: #f4bd42;
+    color: #fff !important;
+
+    p {
+      color: #fffaf0;
+    }
+  }
+}
+
+#contact .list-checker {
+  list-style: none;
+  padding: 0;
+
+  li {
+    color: #6c757d;
+    padding: 0.35rem 0;
+
+    &:before {
+      padding-right: 1rem;
+      content: "\f00c";
+      font-family: "Font Awesome 5 Free";
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 26px;
+      color: #0070cd;
+    }
+  }
+}

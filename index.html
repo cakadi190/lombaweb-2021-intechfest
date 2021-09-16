@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+	<!-- Title -->
+	<title>Sirus &mdash; Sistem Informasi Rumah Sakit</title>
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="./dist/images/brands/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="./dist/images/brands/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="./dist/images/brands/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="./dist/images/brands/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="./dist/images/brands/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="./dist/images/brands/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="./dist/images/brands/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="./dist/images/brands/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="./dist/images/brands/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="./dist/images/brands/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="./dist/images/brands/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="./dist/images/brands/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="./dist/images/brands/favicon-128.png" sizes="128x128" />
+	<meta name="application-name" content="&nbsp;" />
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	<meta name="msapplication-TileImage" content="./dist/images/brands/mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="./dist/images/brands/mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="./dist/images/brands/mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="./dist/images/brands/mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="./dist/images/brands/mstile-310x310.png" />
+
+	<!-- Link Css -->
+	<link rel="stylesheet" href="./dist/vendor/owlcarousel/assets/owl.carousel.min.css" />
+	<link rel="stylesheet" href="./dist/vendor/owlcarousel/assets/owl.theme.green.min.css" />
+	<link rel="stylesheet" href="./dist/style.css" />
+</head>
+<body>
+
+  <!-- header#masthead -->
+	<header id="masthead">
+    <nav class="nav-main navbar border-bottom navbar-expand-md navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html"> <img src="./dist/images/logo/logo-color-alt.svg" height="30px" alt="Sirus" /> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><span class="nav-link active"><i class="fas fa-home mr-2"></i>Beranda</span></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Layanan</a></li>
+            <li class="nav-item"><a class="nav-link" href="./cek-ranap.html">Cek Kamar Ranap</a></li>
+            <li class="nav-item"><a class="nav-link" href="./cek-oksigen.html">Cek Oksigen</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+		<div class="py-5 container">
+			<div class="row py-5">
+				<div class="col-md-7">
+					<a href="./cek-ranap.html" class="new-feature">
+						<div class="new">Baru!</div>
+						<div class="wrapper">Cek data keterisian rumah sakit atau puskesmas</div>
+					</a>
+					<h3>Pelayanan Prima, Keluarga Bahagia</h3>
+					<p class="text-muted">Kami memberikan pelayanan konsultasi, bantuan tabung oksigen dan isinya, data informasi rumah sakit dan juga bantuan informasi kesehatan yang dapat digunakan masyarakat Ngawi yang sedang terkena covid dan atau ingin mencari rujukan.</p>
+					<a href="./cek-ranap.html" class="btn btn-outline-primary" target="_self">Cek Kamar</a> <a href="#services" type="button" class="btn scroll btn-primary">Cek Layanan</a>
+				</div>
+				<div class="d-none d-xs-none d-sm-inline col-md-5"><img src="./dist/images/woman.png" alt="Photo by humberto chavez on Unsplash" class="rounded shadow-lg w-100" /></div>
+			</div>
+		</div>
+	</header>
+  <!-- header#masthead -->
+
+  <!-- #featured -->
+	<section id="featured">
+		<div class="py-5 container">
+			<div class="row">
+				<div class="mb-3 col-md-3 col-6">
+					<div class="featured">
+						<div class="icon"><i class="fas fa-bolt"></i></div>
+						<div class="content">
+							<h3>Pelayanan Cepat</h3>
+							<div class="text-muted">Kami memberikan pelayanan yang cepat dalam kurun waktu 3 jam untuk pengiriman obat dan tabung oksigen ke rumah anda.</div>
+						</div>
+					</div>
+				</div>
+				<div class="mb-3 col-md-3 col-6">
+					<div class="featured">
+						<div class="icon"><i class="fas fa-sync"></i></div>
+						<div class="content">
+							<h3>Data Akurat</h3>
+							<div class="text-muted">Data kamar yang kami berikan merupakan data yang diperbaharui setiap waktu agar dapat memantau kondisi di sekitar.</div>
+						</div>
+					</div>
+				</div>
+				<div class="mb-3 col-md-3 col-6">
+					<div class="featured">
+						<div class="icon"><i class="fas fa-check"></i></div>
+						<div class="content">
+							<h3>Dokter Profesional</h3>
+							<div class="text-muted">Dokter kami siap sedia membantu anda sewaktu-waktu dan memberikan solusi terbaik untuk kesehatan anda.</div>
+						</div>
+					</div>
+				</div>
+                    <div class="mb-3 col-md-3 col-6">
+                        <div class="featured">
+                            <div class="icon"><i class="fas fa-clock"></i></div>
+                            <div class="content">
+                                <h3>Bekerja Penuh 24/7 Hari</h3>
+                                <div class="text-muted">Kami selalu bersedia apabila anda sewaktu-waktu anda membutuhkan pertolongan darurat dan sesegera mungkin.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  </section>
+  <!-- /#featured -->
+
+  <!-- #services -->
+  <section class="py-5 bg-lighter" id="services">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-10">
+          <h3 class="heading"><span>Layanan Kami</span></h3>
+          <p class="text-center mb-5 text-muted">Beberapa layanan kami yang sangat membantu warga Ngawi dalam permasalahan kesehatan sewaktu <strong>#dirumahaja</strong>.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <a href="" class="card card-body">
+            <div class="row">
+              <div class="col-lg-3 col-4">
+                <img src="./dist/images/icon/icon-01.svg" class="mb-3 w-100" alt="Icon 1" />
+              </div>
+              <div class="col-lg-9 col-8">
+                <h3 class="text-montserrat">Antar Obat</h3>
+                <p class="m-0">Layanan antar obat untuk masyarakat Ngawi supaya tidak repot-repot dan khawatir keluar rumah karena masih dalam masa pandemi.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 mb-3">
+          <a href="" class="card card-body">
+            <div class="row">
+              <div class="col-lg-3 col-4">
+                <img src="./dist/images/icon/icon-02.svg" class="mb-3 w-100" alt="Icon 1" />
+              </div>
+              <div class="col-lg-9 col-8">
+                <h3 class="text-montserrat">Layanan Berobat</h3>
+                <p class="m-0">Layanan berobat alternatif untuk pasien bukan COVID-19 agar senantiasa aman, nyaman, sehat dan terhindar dari COVID-19.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 mb-3">
+          <a href="" class="card card-body">
+            <div class="row">
+              <div class="col-lg-3 col-4">
+                <img src="./dist/images/icon/icon-03.svg" class="mb-3 w-100" alt="Icon 1" />
+              </div>
+              <div class="col-lg-9 col-8">
+                <h3 class="text-montserrat">Layanan Konsultasi</h3>
+                <p class="m-0">Layanan konsultasi secara daring maupun luring untuk memastikan dan mengecek kondisi kesehatan anda baik fisik maupun mental.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 mb-3">
+          <a href="" class="card card-body">
+            <div class="row">
+              <div class="col-lg-3 col-4">
+                <img src="./dist/images/icon/icon-04.svg" class="mb-3 w-100" alt="Icon 1" />
+              </div>
+              <div class="col-lg-9 col-8">
+                <h3 class="text-montserrat">Layanan Antar Oksigen</h3>
+                <p class="m-0">Layanan antar oksigen dari depo oksigen terdekat rumah anda supaya pertolongan pertama untuk pasien COVID-19 berjalan cepat.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /#services -->
+
+  <!-- #contact -->
+  <section id="contact">
+      <div class="py-5 container">
+          <div class="row">
+              <div class="col-md-6">
+                  <h3 class="text-montserrat">Konsultasi Gratis!</h3>
+                  <p class="text-muted">Jika anda mengalami kendala ketika datang ke kantor kami, anda dapat mengisi formulir berikut untuk membuat jadwal pertemuan dengan dokter kami dan konsultasi dengan tim kami secara gratis dan langsung mendapatkan obat sesuai resep dokter agar kesehatan anda pulih kembali.</p>
+                  <ul class="list-checker">
+                      <li>Jelaskan apa yang anda keluhkan</li>
+                      <li>Tim ahli kesehatan kami akan membantu anda</li>
+                      <li>Membuat resep obat</li>
+                      <li>Bayar semua tagihan obat dan jasa kami</li>
+                      <li>Mengirimkan obat dalam waktu 3 jam</li>
+                      <li>Anda sembuh</li>
+                  </ul>
+              </div>
+              <div class="col-md-6">
+                  <div class="card border-0 shadow mt-3 mt-md-0">
+                      <div class="card-body">
+                          <h3>Isi Formulir Dibawah</h3>
+                          <div class="form-group">
+                              <div class="form-floating form-floating-alt"><input id="nama" type="text" placeholder="Contoh: Paijo" name="nama" class="form-control"> <label for="nama">Nama Lengkap</label></div>
+                          </div>
+                          <div class="form-group">
+                              <div class="form-floating form-floating-alt"><input id="nomor_hp" type="text" placeholder="Contoh: 085123222121" name="nomor_hp" class="form-control"> <label for="nomor_hp">Nomor HP</label></div>
+                          </div>
+                          <div class="form-group">
+                              <label>Pilihan Tempat Praktek</label>
+                              <div class="input-card-container column">
+                                  <label for="ngawi_kota" class="input-custom-card">
+                                      <input id="ngawi_kota" type="radio" name="pilihan-ganda" class="custom-card">
+                                      <div class="input-wrap">
+                                          <div class="input-header">
+                                              <div class="indicator"></div>
+                                              Kantor Ngawi Kota
+                                          </div>
+                                          <div class="input-body"> Jl. Bernadip, No. 12, Ngawi, Jawa Timur</div>
+                                      </div>
+                                  </label>
+                                  <label for="karangjati" class="input-custom-card">
+                                      <input id="karangjati" type="radio" name="pilihan-ganda" class="custom-card">
+                                      <div class="input-wrap">
+                                          <div class="input-header">
+                                              <div class="indicator"></div>
+                                              Kantor Karangjati
+                                          </div>
+                                          <div class="input-body"> Jl. Raya Ngawi-Caruban KM 20, Legundi, Karangjati (Samping Balai Desa Karangjati), No. 12, Ngawi, Jawa Timur</div>
+                                      </div>
+                                  </label>
+                                  <label for="widodaren" class="input-custom-card">
+                                      <input id="widodaren" type="radio" name="pilihan-ganda" class="custom-card">
+                                      <div class="input-wrap">
+                                          <div class="input-header">
+                                              <div class="indicator"></div>
+                                              Kantor Widodaren
+                                          </div>
+                                          <div class="input-body"> Jl. Raya Solo-Ngawi KM 12, Gendingan (Samping Terminal Gendingan) No. 12, Widodaren, Ngawi, Jawa Timur</div>
+                                      </div>
+                                  </label>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                            <label>Penanganan Dokter</label>
+                            <div class="input-card-container">
+                              <label for="penyakit_dalam" class="input-custom-card">
+                                <input id="penyakit_dalam" type="radio" name="dokter" class="custom-card">
+                                <div class="input-wrap">
+                                  <div class="input-header">
+                                    <img src="./dist/images/icon/liver-organ.png" class="mr-4" height="40" />
+                                    Dokter Penyakit Dalam
+                                  </div>
+                                </div>
+                              </label>
+                              <label for="penyakit_luar" class="input-custom-card">
+                                <input id="penyakit_luar" type="radio" name="dokter" class="custom-card">
+                                <div class="input-wrap">
+                                  <div class="input-header">
+                                    <img src="./dist/images/icon/body-scan.png" class="mr-4" height="40" />
+                                    Dokter Penyakit Luar
+                                  </div>
+                                </div>
+                              </label>
+                              <label for="mental_psikologis" class="input-custom-card">
+                                <input id="mental_psikologis" type="radio" name="dokter" class="custom-card">
+                                <div class="input-wrap">
+                                  <div class="input-header">
+                                    <img src="./dist/images/icon/philosophy.png" class="mr-4" height="40" />
+                                    Mental dan Psikologis
+                                  </div>
+                                </div>
+                              </label>
+                            </div>
+                          </div>
+
+                          <button type="button" class="btn mt-3 btn-primary btn-block">Kirimkan<i class="fas fa-arrow-right ml-2"></i></button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- /#contact -->
+
+  <!-- #testimonial -->
+  <section id="testimonial" class="py-5 bg-primary">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-10">
+          <h3 class="heading text-white"><span>Apa Kata Mereka?</span></h3>
+          <p class="text-center text-white mb-5">Beberapa testimoni mereka terhadap pelayanan kami</p>
+        </div>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="card card-body">
+            <div class="row">
+              <div class="col-4">
+                <img src="./dist/images/orang-1.png" class="rounded-circle w-100" alt="Photo by Toa Heftiba on Unsplash" />
+              </div>
+              <div class="col-8">
+                <h4 class="text-montserrat text-dark">Mbak Hanifah</h4>
+                <blockquote>
+                  <p class="text-muted">Terima kasih tim SIRUS telah membantu saya dan keluarga saya untuk berjuang melawan COVID-19!</p>
+                  <cite class="text-muted">Ibu rumah tangga</cite>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card card-body">
+            <div class="row">
+              <div class="col-4">
+                <img src="./dist/images/orang-2.png" class="rounded-circle w-100" alt="Photo by ian dooley on Unsplash" />
+              </div>
+              <div class="col-8">
+                <h4 class="text-montserrat text-dark">Mas Fajrul</h4>
+                <blockquote>
+                  <p class="text-muted">Berkat SIRUS, kami sekeluarga dapat berjuang dari COVID-19!</p>
+                  <cite class="text-muted">Wirausaha</cite>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card card-body">
+            <div class="row">
+              <div class="col-4">
+                <img src="./dist/images/orang-3.png" class="rounded-circle w-100" alt="Photo by bruce mars on Unsplash" />
+              </div>
+              <div class="col-8">
+                <h4 class="text-montserrat text-dark">Mas Bagas</h4>
+                <blockquote>
+                  <p class="text-muted">Tetap memberikan informasi yang akurat dan tepat untuk warga Ngawi ya?</p>
+                  <cite class="text-muted">Wiraswasta</cite>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card card-body">
+            <div class="row">
+              <div class="col-4">
+                <img src="./dist/images/orang-2.png" class="rounded-circle w-100" alt="Photo by bruce mars on Unsplash" />
+              </div>
+              <div class="col-8">
+                <h4 class="text-montserrat text-dark">Mas Agus</h4>
+                <blockquote>
+                  <p class="text-muted">Berkat Sirus, Saya dapat hidup normal kembali walau sudah terpapar COVID-19 sangat parah.</p>
+                  <cite class="text-muted">Pekerja Lepas</cite>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card card-body">
+            <div class="row">
+              <div class="col-4">
+                <img src="./dist/images/orang-1.png" class="rounded-circle w-100" alt="Photo by bruce mars on Unsplash" />
+              </div>
+              <div class="col-8">
+                <h4 class="text-montserrat text-dark">Mbak Siti</h4>
+                <blockquote>
+                  <p class="text-muted">Selalu memberikan informasi yang lengkap dan akurat, MANTAP!</p>
+                  <cite class="text-muted">Wiraswasta</cite>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /#testimonial -->
+
+  <!-- #blog -->
+  <section id="blog" class="py-5 bg-white">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-10">
+          <h3 class="heading"><span>Artikel Menarik</span></h3>
+          <p class="text-center mb-5">Yuk baca-baca artikel menarik dari kami</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-6 mb-3">
+          <div class="card">
+            <img src="./dist/images/default.png" alt="Logo" class="card-img-top" />
+            <div class="card-body">
+              <h4 class="text-montserrat"><a class="text-dark" href="#">Waspada Musim Hujan</a></h4>
+
+              <div class="badge badge-primary">Kesehatan</div>
+              <div class="badge badge-primary">COVID-19</div>
+              <div class="badge badge-primary">Imunitas</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <div class="card">
+            <img src="./dist/images/default.png" alt="Logo" class="card-img-top" />
+            <div class="card-body">
+              <h4 class="text-montserrat"><a class="text-dark" href="#">Diet Buah Yang Tepat Untuk Anda Pend...</a></h4>
+
+              <div class="badge badge-primary">Kesehatan</div>
+              <div class="badge badge-primary">Diet</div>
+              <div class="badge badge-primary">Makanan</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <img src="./dist/images/default.png" alt="Logo" class="card-img-top" />
+            <div class="card-body">
+              <h4 class="text-montserrat"><a class="text-dark" href="#">Mendonorkan Darah Di Masa Pandemi?</a></h4>
+
+              <div class="badge badge-primary">Kesehatan</div>
+              <div class="badge badge-primary">COVID-19</div>
+              <div class="badge badge-primary">Donor Darah</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <img src="./dist/images/default.png" alt="Logo" class="card-img-top" />
+            <div class="card-body">
+              <h4 class="text-montserrat"><a class="text-dark" href="#">Kenali Gejala COVID-19 Varian Delta</a></h4>
+
+              <div class="badge badge-primary">Kesehatan</div>
+              <div class="badge badge-primary">COVID-19</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 text-center mt-3">
+          <button class="btn btn-outline-primary">Baca Lebih Banyak <i class="fas fa-arrow-right ml-2"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /#blog -->
+
+  <!-- #footer -->
+  <footer id="footer" class="pt-5 pb-3 bg-lighter border-top">
+      <div class="container">
+          <div class="row">
+              <div class="mb-3 col-sm-12 col-md-6 col-lg-3 order-md-1 order-lg-1">
+                  <img src="./dist/images/logo/logo-color-alt.svg" alt="SIRUS" class="w-100 mb-3">
+                  <p class="m-0">Kami merupakan sebuah layanan digital yang bergerak dalam dunia kesehatan untuk masyarakat Ngawi demi penanganan COVID-19 yang optimal.</p>
+              </div>
+              <div class="mb-3 col-sm-12 col-md-6 col-lg-3 order-md-4 order-lg-2">
+                  <div class="widget-title">
+                      <h3>Tentang Kami</h3>
+                  </div>
+                  <ul class="nav flex-column">
+                      <li class="nav-item"><a href="#" class="nav-link">Tentang Kami</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">Medical Checkup Gratis</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">Tes Usap Gratis</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">Swab Test Gratis</a></li>
+                  </ul>
+              </div>
+              <div class="mb-3 col-sm-12 col-md-6 col-lg-3 order-md-4 order-lg-3">
+                  <div class="widget-title">
+                      <h3>Layanan Kami</h3>
+                  </div>
+                  <ul class="nav flex-column">
+                      <li class="nav-item"><a href="./cek-oksigen.html" class="nav-link">Cek Data Oksigen</a></li>
+                      <li class="nav-item"><a href="./cek-vaksinasi.html" class="nav-link">Cek Data Vaksinasi</a></li>
+                      <li class="nav-item"><a href="./cek-ranap.html" class="nav-link">Cek Data Kamar Ranap</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">Cek Jadwal Dokter</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">Cek Jadwal Pemeriksaan</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">Jadwalkan Periksa</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">Ambil Obat</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3 order-sm-2 order-md-4">
+                  <div class="widget-title">
+                      <h3>Berlangganan Yuk!</h3>
+                  </div>
+                  <p>Daftarkan alamat surat elektronik anda untuk mendapatkan informasi terbaru seputar layanan kesehatan di Ngawi tanpa harus bolak-balik ke situs ini.</p>
+                  <form>
+                      <div class="form-group form-floating-alt form-floating"><input id="email" type="email" placeholder="Mis: admin@sirus.com" class="form-control"> <label for="email">Masukkan email anda</label></div>
+                      <button type="button" class="btn btn-primary btn-block">Kirimkan Email!</button>
+                  </form>
+              </div>
+          </div>
+          <div class="row pt-3 mt-3 border-top">
+              <div class="col-md-6">
+                  <p class="m-0">Hak cipta 2021 <a href="/" aria-current="page" class="nuxt-link-exact-active nuxt-link-active">SIRUS</a>.</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- /#footer -->
+
+  <script src="./dist/main.bundle.js"></script>
+  <script src="./dist/vendor/owlcarousel/owl.carousel.min.js"></script>
+
+  <script>
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600: {
+          items: 2,
+        },
+        992:{
+            items:3
+        },
+    }
+  })
+  </script>
+</body>
+</html>

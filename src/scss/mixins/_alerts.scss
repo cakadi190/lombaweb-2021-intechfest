@@ -1,0 +1,43 @@
+@mixin alert-regular($background : #fff, $color-name: default) {
+  @if $color-name == 'light' OR
+  $color-name == 'lighter' {
+    border-color: mix($dark, $background, 15%);
+  } @else if $color-name == 'dark' OR
+  $color-name == 'medium' {
+    border-color: mix($white, $background, 65%);
+  } @else {
+    border-color: mix($white, $background, 35%);
+  }
+
+  @if $color-name == 'dark' OR
+  $color-name == 'medium' {
+    background: mix($white, $background, 90%);
+  } @else if $color-name == 'light' OR
+  $color-name == 'lighten' {
+    background: mix($white, $background, 2%);
+  } @else if $color-name == 'info' {
+    background: mix($white, $background, 85%);
+  } @else {
+    background: mix($white, $background, 85%);
+  }
+
+  @if $color-name == 'light' OR
+  $color-name == 'medium' OR
+  $color-name == 'lighter' {
+    color: $dark;
+  } @else {
+    color: mix($dark, $background, 45%);
+  }
+}
+
+@mixin alert-fill($background: #fff, $color-name: default) {
+  background: $background;
+  border-color: $background;
+
+  @if $color-name == 'light' OR
+  $color-name == 'lighten' {
+    color: $dark;
+  } @else {
+    color: $white;
+  }
+}

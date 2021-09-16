@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Open+Sans&family=Montserrat:wght@400;700&display=swap');
+
+// Font ================================
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Open Sans", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
+
+// Color System =========================
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$grays: () !default;
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+
+$blue:    #3171e0 !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #eb445a !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffca22 !default;
+$green:   #1ee0ac !default;
+$teal:    #20c997 !default;
+$cyan:    #3dc2ff !default;
+
+$colors: () !default;
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
+  ),
+  $colors
+);
+
+$primary:       $blue !default;
+$secondary:     $indigo !default;
+$tertiary:      $purple !default;
+$success:       $teal !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         #e5e9f2 !default;
+$lighter:       #f5f6fa !default;
+$medium:        $gray-500 !default;
+$dark:          $gray-900 !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "tertiary":   $tertiary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "lighter":    $lighter,
+    "medium":     $medium,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
+
+// Utility ===================================
+$box-shadow-sm:               0 2px 12px 0 rgba($dark, .05) !default;
+$box-shadow:                  0 4px 16px 0 rgba($dark, .1) !default;
+$box-shadow-lg:               0 6px 24px 0 rgba($dark, .125) !default;
